@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# --- ChatGPT API Call ---
+#  ChatGPT API Call
 def ask_openai(prompt):
     try:
         response = openai.ChatCompletion.create(
@@ -24,9 +24,9 @@ def ask_openai(prompt):
     except Exception as e:
         return f"⚠️ Error: {str(e)}"
 
-# --- Tkinter GUI Setup ---
+#  Tkinter GUI Setup 
 root = tk.Tk()
-root.title("AI Q&A Bot 🤖")
+root.title("AI Q&A Bot ")
 root.geometry("700x550")
 root.configure(bg="#F5F5F5")
 
